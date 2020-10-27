@@ -25,7 +25,7 @@ class NewsAPI {
     for (int i = 0; i <= 240; i++) {
       var needed = id[i];
       var getNews = await http.get("$baseurl/item/$needed.json");
-      if (getNews.statusCode == 200) {
+      if (getNews.statusCode == 200 && i == 5) {
         return Stories.fromJson(jsonDecode(getNews.body));
       }
     }

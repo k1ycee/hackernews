@@ -12,5 +12,9 @@ class NewsInitial extends NewsState {}
 class NewsFailure extends NewsState {}
 
 class NewsSuccess extends NewsState{
-  
+  final Stories stories;
+  const NewsSuccess({this.stories});
+
+  @override
+  List<Object> get props => [stories];
 }
