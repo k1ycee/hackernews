@@ -23,7 +23,7 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
     if(event is FetchNews){
       yield NewsInitial();
       try {
-        final Stories storyrep = await repo.getNews();
+        final List<Stories> storyrep = await repo.getNews();
         yield NewsSuccess(stories: storyrep);
       }
       catch(_){

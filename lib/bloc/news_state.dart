@@ -12,7 +12,7 @@ class NewsInitial extends NewsState {}
 class NewsFailure extends NewsState {}
 
 class NewsSuccess extends NewsState{
-  final Stories stories;
+  final List<Stories> stories;
   const NewsSuccess({this.stories});
 
   @override

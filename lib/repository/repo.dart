@@ -4,5 +4,5 @@ import 'package:bloc_re_visited/models/stories_model.dart';
 class NewsRepo{
   NewsAPI _api = NewsAPI();
 
-  Future<Stories> getNews() => _api.getNews();
+  Future<List<Stories>> getNews() => _api.getNews();
 }

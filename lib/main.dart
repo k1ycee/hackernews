@@ -1,4 +1,6 @@
+import 'package:bloc_re_visited/api/hacker_news.dart';
 import 'package:bloc_re_visited/bloc/news_bloc.dart';
+import 'package:bloc_re_visited/models/stories_model.dart';
 import 'package:bloc_re_visited/repository/repo.dart';
 import 'package:bloc_re_visited/views/new_stories.dart';
 import 'package:flutter/material.dart';
@@ -29,3 +31,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
